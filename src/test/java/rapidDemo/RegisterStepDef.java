@@ -59,6 +59,7 @@ public static WebDriver driver;
 
 	@Then("^The user should be registered successfully$")
 	public void the_user_should_be_registered_successfully() throws Throwable {
+		
 		if (driver.getPageSource().contains("Thank you for registering.") == true) {
 			System.out.println("User Successfully Registered");
 		} else {
